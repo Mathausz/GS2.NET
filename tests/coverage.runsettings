@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Cobertura de testes das camadas de Domínio e Aplicação (requisito da Sprint 4).
+  Uso (na raiz do repositório):
+    dotnet test --collect:"XPlat Code Coverage" --settings tests/coverage.runsettings
+  Os relatórios (cobertura XML) ficam em TestResults/<guid>/coverage.cobertura.xml.
+-->
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <Format>cobertura</Format>
+          <Include>[NexusVerde.Domain]*,[NexusVerde.Application]*</Include>
+          <ExcludeByFile>**/Migrations/**/*.cs</ExcludeByFile>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

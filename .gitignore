@@ -1,0 +1,29 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+TestResults/
+*.log
+logs/
+coverage/
+*.nupkg
+
+## Segredos: NUNCA versionar
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.pfx
+*.p12
+
+## Sistema
+.DS_Store
+Thumbs.db
